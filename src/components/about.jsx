@@ -8,6 +8,7 @@ class About extends React.Component {
       skills: [
         { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
         { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
+        { id: "Python", content: "Python", porcentage: "85%", value: "85" },
         {
           id: "JavaScript_skill",
           content: "JavaScript",
@@ -44,18 +45,18 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            " I am an ambitious software developer with exceptional technical skills in coding,software development and capable of following established procedures and working under little or n supervision looking for new opportunities by offering expertise in programming analys is application analysis ,design and in-depth knowledge of development tools and languages."
         },
         {
           id: "second-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "I’m a strong analytical thinker and creative problem-solver and I love working as part of a team. I enjoy conceptualizing technology solutions that will make people’s lives easier. I have received consistent praise from my supervisors and co-workers for my collaborative, upbeat attitude and innovative ideas. I would love to bring these ideas to work at your company"
         },
-        {
-          id: "third-p-about",
-          content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
-        }
+        // {
+        //   id: "third-p-about",
+        //   content:
+        //     "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+        // }
       ]
     };
   }
@@ -116,7 +117,7 @@ class About extends React.Component {
                       </div>
                       {this.state.about_me.map(content => {
                         return (
-                          <p className="lead" key={content.id}>
+                          <p className="lead" style={{textAlign:"justify"}} key={content.id}>
                             {content.content}
                           </p>
                         );

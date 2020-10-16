@@ -1,13 +1,12 @@
 import React from "react";
 
 //import stock
-import stock from "../img/image1.jpg";
-import stock1 from "../img/image2.jpg";
-import stock2 from "../img/image3.jpg";
-import stock3 from "../img/image4.jpg";
-import stock4 from "../img/image5.jpg";
-import stock5 from "../img/image6.jpg";
-
+import stock from "../img/primal.png";
+import stock1 from "../img/jagtari.png";
+import stock2 from "../img/complaints.png";
+import jagtari1 from "../img/jagtari1.png";
+import warrenty_1 from "../img/warrenty_1.png"
+import primal from "../img/primal1.png"
 class Portfolio extends React.Component {
   render() {
     return (
@@ -18,8 +17,7 @@ class Portfolio extends React.Component {
               <div className="title-box text-center">
                 <h3 className="title-a">Portfolio</h3>
                 <p className="subtitle-a">
-                  Incididunt nostrud id aute culpa excepteur pariatur consequat
-                  elit culpa nulla enim anim incididunt.
+                Here are a few projects I've worked on recently. Want to see more? <span className="text-success">Email me</span>.
                 </p>
                 <div className="line-mf"></div>
               </div>
@@ -35,7 +33,7 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Primal Kitchen</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
                             HTML5 CSS3 Bootstrap ReactJS
@@ -51,13 +49,13 @@ class Portfolio extends React.Component {
                   </div>
                 </a>
                 <a
-                  href={stock1}
+                  href={primal}
                   data-lightbox="gallery-vmarine"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
-                <a
+                {/* <a
                   href={stock2}
                   data-lightbox="gallery-vmarine"
                   style={{ display: "none" }}
@@ -84,23 +82,22 @@ class Portfolio extends React.Component {
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-aguadeluz">
+                <a href={jagtari1} data-lightbox="gallery-aguadeluz">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+                    <img src={stock1} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Jagtari.com</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack SmoothScrolling
-                            VanillaJS
+                            React,MONGODB,mongoose,Redux,CSS3
                           </span>{" "}
                         </div>
                       </div>
@@ -119,14 +116,14 @@ class Portfolio extends React.Component {
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
-                <a
+                {/* <a
                   href={stock2}
                   data-lightbox="gallery-aguadeluz"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
-                </a>
-                <a
+                </a> */}
+                {/* <a
                   href={stock3}
                   data-lightbox="gallery-aguadeluz"
                   style={{ display: "none" }}
@@ -146,22 +143,22 @@ class Portfolio extends React.Component {
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-todo">
+                <a href={stock2} data-lightbox="gallery-todo">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+                    <img src={stock2} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Warrenty Handling System</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack ReactJS
+                            HTML5 CSS3 Bootstrap MERN
                           </span>
                           {/*} / <span className="w-date">18 Sep. 2018</span>*/}
                         </div>
@@ -175,13 +172,13 @@ class Portfolio extends React.Component {
                   </div>
                 </a>
                 <a
-                  href={stock1}
+                  href={warrenty_1}
                   data-lightbox="gallery-todo"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
-                <a
+                {/* <a
                   href={stock2}
                   data-lightbox="gallery-todo"
                   style={{ display: "none" }}
@@ -208,10 +205,10 @@ class Portfolio extends React.Component {
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
-                </a>
+                </a> */}
               </div>
             </div>
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               <div className="work-box">
                 <a href={stock} data-lightbox="gallery-medlingos">
                   <div className="work-img">
@@ -271,8 +268,8 @@ class Portfolio extends React.Component {
                   jsx-a11y/anchor-has-content warning
                 </a>
               </div>
-            </div>
-            <div className="col-md-4">
+            </div> */}
+            {/* <div className="col-md-4">
               <div className="work-box">
                 <a href={stock} data-lightbox="gallery-smth">
                   <div className="work-img">
@@ -330,8 +327,8 @@ class Portfolio extends React.Component {
                   jsx-a11y/anchor-has-content warning
                 </a>
               </div>
-            </div>
-            <div className="col-md-4">
+            </div> */}
+            {/* <div className="col-md-4">
               <div className="work-box">
                 <a href={stock} data-lightbox="gallery-mf">
                   <div className="work-img">
@@ -391,7 +388,7 @@ class Portfolio extends React.Component {
                   jsx-a11y/anchor-has-content warning
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
